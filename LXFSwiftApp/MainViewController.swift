@@ -10,10 +10,11 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+//    let cellID = "MainTableViewCell"
+    
     let dataList = [
-        "自定义tableview",
-        "可选类型",
-    ];
+        MainModel.init(name: "自定义tableview", controllerName: "CustomTableViewController"),
+        ] as [MainModel];
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -22,8 +23,6 @@ class MainViewController: UIViewController {
         
         tableView.dataSource = self;
         tableView.delegate = self;
-        
-        tableView.register(MainTableViewCell.classForCoder(), forCellReuseIdentifier: NSStringFromClass(MainTableViewCell.self))
         
         tableView.tableFooterView = UIView()
     }
@@ -51,6 +50,10 @@ class MainViewController: UIViewController {
 extension MainViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("选择了\(indexPath.row)行")
+        let model = dataList[indexPath.row]
+        let destinationStoryboard = UIStoryboard(name:model.controllerName, bundle:nil)
+        let destinationViewController = destinationStoryboard.instantiateViewController(withIdentifier: model.controllerName)
+        self.navigationController?.pushViewController(destinationViewController, animated: true)
     }
 }
 
@@ -63,11 +66,9 @@ extension MainViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(MainTableViewCell.self)) as! MainTableViewCell
-        if cell == nil {
-            cell = MainTableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: NSStringFromClass(MainTableViewCell.self))
-        }
-        cell.textLabel?.text = dataList[indexPath.row];
+        let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(MainTableViewCell.self), for: indexPath) as! MainTableViewCell
+        let model = dataList[indexPath.row]
+        cell.titleLabel?.text = model.name
         
         return cell
     }
@@ -77,14 +78,18 @@ extension MainViewController : UITableViewDataSource {
 
 class MainTableViewCell: UITableViewCell {
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.selectionStyle = UITableViewCell.SelectionStyle.none
-    }
+    @IBOutlet weak var titleLabel: UILabel!
     
 }
 
+//MARK: - Model -
+
+class MainModel {
+    var name : String
+    var controllerName : String
+    
+    init(name: String, controllerName: String) {
+        self.name = name
+        self.controllerName = controllerName
+    }
+}
