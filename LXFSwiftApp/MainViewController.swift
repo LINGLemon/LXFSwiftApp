@@ -14,6 +14,9 @@ class MainViewController: UIViewController {
     
     let dataList = [
         MainModel.init(name: "自定义tableview", controllerName: "CustomTableViewController"),
+        MainModel.init(name: "索引和章节tableview", controllerName: "IndexsViewController"),
+        MainModel.init(name: "UITableViewCell的accessoryType", controllerName: "SelectViewController"),
+        MainModel.init(name: "UITableView Cell的操作", controllerName: "AddViewController"),
         ] as [MainModel];
 
     @IBOutlet weak var tableView: UITableView!
@@ -49,7 +52,6 @@ class MainViewController: UIViewController {
 
 extension MainViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("选择了\(indexPath.row)行")
         let model = dataList[indexPath.row]
         let destinationStoryboard = UIStoryboard(name:model.controllerName, bundle:nil)
         let destinationViewController = destinationStoryboard.instantiateViewController(withIdentifier: model.controllerName)

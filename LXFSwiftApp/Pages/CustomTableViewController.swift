@@ -25,8 +25,6 @@ class CustomTableViewController: UIViewController, UITableViewDataSource, UITabl
         
         tableView.dataSource = self
         tableView.delegate = self
-        
-        tableView.register(NewTableViewCell.classForCoder(), forCellReuseIdentifier: NSStringFromClass(NewTableViewCell.self))
     }
     
     // MARK: - UITableViewDataSource
@@ -54,15 +52,6 @@ class CustomTableViewController: UIViewController, UITableViewDataSource, UITabl
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 74.0
     }
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 20
-    }
-    // 选中cell后执行此方法
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
-    }
-    
-    
 
     /*
     // MARK: - Navigation

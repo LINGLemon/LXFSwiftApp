@@ -15,6 +15,12 @@
 		BE4EB3FD24AB1B0B001748A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4EB3FB24AB1B0B001748A7 /* LaunchScreen.storyboard */; };
 		BE4EB42B24AC21D0001748A7 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4EB42924AC21D0001748A7 /* CustomTableViewController.swift */; };
 		BE4EB42E24AC2243001748A7 /* CustomTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4EB42D24AC2243001748A7 /* CustomTableViewController.storyboard */; };
+		BE4EB43024AC7972001748A7 /* IndexsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4EB42F24AC7972001748A7 /* IndexsViewController.swift */; };
+		BE4EB43224AC80F5001748A7 /* IndexsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4EB43124AC80F5001748A7 /* IndexsViewController.storyboard */; };
+		BE4EB43424AC8177001748A7 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4EB43324AC8177001748A7 /* SelectViewController.swift */; };
+		BE4EB43624AC8183001748A7 /* SelectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4EB43524AC8183001748A7 /* SelectViewController.storyboard */; };
+		BE4EB43824AC8B81001748A7 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4EB43724AC8B81001748A7 /* AddViewController.swift */; };
+		BE4EB43A24AC8B8F001748A7 /* AddViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4EB43924AC8B8F001748A7 /* AddViewController.storyboard */; };
 		FB3C142CCC024A4628367A5A /* Pods_LXFSwiftApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC7FC6BD417C52CAF290038 /* Pods_LXFSwiftApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +38,12 @@
 		BE4EB3FE24AB1B0B001748A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE4EB42924AC21D0001748A7 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		BE4EB42D24AC2243001748A7 /* CustomTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomTableViewController.storyboard; sourceTree = "<group>"; };
+		BE4EB42F24AC7972001748A7 /* IndexsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexsViewController.swift; sourceTree = "<group>"; };
+		BE4EB43124AC80F5001748A7 /* IndexsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IndexsViewController.storyboard; sourceTree = "<group>"; };
+		BE4EB43324AC8177001748A7 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		BE4EB43524AC8183001748A7 /* SelectViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectViewController.storyboard; sourceTree = "<group>"; };
+		BE4EB43724AC8B81001748A7 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		BE4EB43924AC8B8F001748A7 /* AddViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +105,12 @@
 			children = (
 				BE4EB42924AC21D0001748A7 /* CustomTableViewController.swift */,
 				BE4EB42D24AC2243001748A7 /* CustomTableViewController.storyboard */,
+				BE4EB42F24AC7972001748A7 /* IndexsViewController.swift */,
+				BE4EB43124AC80F5001748A7 /* IndexsViewController.storyboard */,
+				BE4EB43324AC8177001748A7 /* SelectViewController.swift */,
+				BE4EB43524AC8183001748A7 /* SelectViewController.storyboard */,
+				BE4EB43724AC8B81001748A7 /* AddViewController.swift */,
+				BE4EB43924AC8B8F001748A7 /* AddViewController.storyboard */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -166,7 +184,10 @@
 			files = (
 				BE4EB3FD24AB1B0B001748A7 /* LaunchScreen.storyboard in Resources */,
 				BE4EB42E24AC2243001748A7 /* CustomTableViewController.storyboard in Resources */,
+				BE4EB43224AC80F5001748A7 /* IndexsViewController.storyboard in Resources */,
+				BE4EB43624AC8183001748A7 /* SelectViewController.storyboard in Resources */,
 				BE4EB3FA24AB1B0B001748A7 /* Assets.xcassets in Resources */,
+				BE4EB43A24AC8B8F001748A7 /* AddViewController.storyboard in Resources */,
 				BE4EB3F824AB1B06001748A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,8 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE4EB42B24AC21D0001748A7 /* CustomTableViewController.swift in Sources */,
+				BE4EB43024AC7972001748A7 /* IndexsViewController.swift in Sources */,
+				BE4EB43824AC8B81001748A7 /* AddViewController.swift in Sources */,
 				BE4EB3F524AB1B06001748A7 /* MainViewController.swift in Sources */,
 				BE4EB3F124AB1B06001748A7 /* AppDelegate.swift in Sources */,
+				BE4EB43424AC8177001748A7 /* SelectViewController.swift in Sources */,
 				BE4EB3F324AB1B06001748A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
