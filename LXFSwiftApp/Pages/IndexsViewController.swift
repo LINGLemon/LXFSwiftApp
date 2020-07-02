@@ -60,9 +60,11 @@ class IndexsViewController: UIViewController, UITableViewDataSource {
         cell?.textLabel?.text = arr?[indexPath.row]
         return cell!
     }
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return keys[section]
     }
+    
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
         return keys
     }
