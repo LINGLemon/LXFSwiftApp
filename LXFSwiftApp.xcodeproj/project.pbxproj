@@ -23,6 +23,7 @@
 		BE4EB43A24AC8B8F001748A7 /* AddViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4EB43924AC8B8F001748A7 /* AddViewController.storyboard */; };
 		BEA50BB324AD8ADC00FD2281 /* WKWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50BB224AD8ADC00FD2281 /* WKWebViewViewController.swift */; };
 		BEA50BB524AD8AEE00FD2281 /* WKWebViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA50BB424AD8AEE00FD2281 /* WKWebViewViewController.storyboard */; };
+		BEA50BB824ADC8C600FD2281 /* SystemUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50BB724ADC8C600FD2281 /* SystemUtil.swift */; };
 		FB3C142CCC024A4628367A5A /* Pods_LXFSwiftApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC7FC6BD417C52CAF290038 /* Pods_LXFSwiftApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		BE4EB43924AC8B8F001748A7 /* AddViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddViewController.storyboard; sourceTree = "<group>"; };
 		BEA50BB224AD8ADC00FD2281 /* WKWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewViewController.swift; sourceTree = "<group>"; };
 		BEA50BB424AD8AEE00FD2281 /* WKWebViewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WKWebViewViewController.storyboard; sourceTree = "<group>"; };
+		BEA50BB724ADC8C600FD2281 /* SystemUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				BE4EB42624AC216D001748A7 /* Pages */,
+				BEA50BB624ADC83B00FD2281 /* Utils */,
 				BE4EB3F024AB1B06001748A7 /* AppDelegate.swift */,
 				BE4EB3F224AB1B06001748A7 /* SceneDelegate.swift */,
 				BE4EB3F424AB1B06001748A7 /* MainViewController.swift */,
@@ -119,6 +122,14 @@
 				BEA50BB424AD8AEE00FD2281 /* WKWebViewViewController.storyboard */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		BEA50BB624ADC83B00FD2281 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BEA50BB724ADC8C600FD2281 /* SystemUtil.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		D1BE22779AB2DF4D612FABDE /* Frameworks */ = {
@@ -231,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA50BB824ADC8C600FD2281 /* SystemUtil.swift in Sources */,
 				BE4EB42B24AC21D0001748A7 /* CustomTableViewController.swift in Sources */,
 				BE4EB43024AC7972001748A7 /* IndexsViewController.swift in Sources */,
 				BEA50BB324AD8ADC00FD2281 /* WKWebViewViewController.swift in Sources */,

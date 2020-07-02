@@ -60,9 +60,8 @@ class MainViewController: UIViewController {
 
 extension MainViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sectionArr = Array<[MainModel]>(dataList.values)
-        let mainModelArr = sectionArr[indexPath.section]
-        let model = mainModelArr[indexPath.row]
+        let mainModelArr = dataList[keys[indexPath.section]]
+        let model = mainModelArr![indexPath.row]
         let destinationStoryboard = UIStoryboard(name:model.controllerName, bundle:nil)
         let destinationViewController = destinationStoryboard.instantiateViewController(withIdentifier: model.controllerName)
         self.navigationController?.pushViewController(destinationViewController, animated: true)
