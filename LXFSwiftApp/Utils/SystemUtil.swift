@@ -10,6 +10,9 @@ import UIKit
 
 class SystemUtil: NSObject {
     
+    static let shared = SystemUtil()
+    private override init() {}
+    
     static func getStatusBarHight() -> CGFloat {
         var statusBarHeight = 0 as CGFloat
         
