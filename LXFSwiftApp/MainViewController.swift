@@ -13,6 +13,9 @@ class MainViewController: UIViewController {
 //    let cellID = "MainTableViewCell"
     
     let dataList = [
+        "Foundation" : [
+            MainModel.init(name: "协议的实践", controllerName: "ProtocolViewController"),
+        ],
         "UITableView" : [
             MainModel.init(name: "自定义tableview", controllerName: "CustomTableViewController"),
             MainModel.init(name: "索引和章节tableview", controllerName: "IndexsViewController"),
