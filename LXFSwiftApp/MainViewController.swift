@@ -16,6 +16,9 @@ class MainViewController: UIViewController {
         "Foundation" : [
             MainModel.init(name: "协议的实践", controllerName: "ProtocolViewController"),
         ],
+        "OC-SWIFT-Bridging" : [
+            MainModel.init(name: "swift调用OC代码", controllerName: "UseOCViewController"),
+        ],
         "UITableView" : [
             MainModel.init(name: "自定义tableview", controllerName: "CustomTableViewController"),
             MainModel.init(name: "索引和章节tableview", controllerName: "IndexsViewController"),

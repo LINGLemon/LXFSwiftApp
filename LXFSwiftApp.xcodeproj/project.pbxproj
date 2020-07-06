@@ -24,6 +24,9 @@
 		BE528DDA24AF0D41004F2DE8 /* ProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE528DD924AF0D41004F2DE8 /* ProtocolViewController.swift */; };
 		BE528DDC24AF0D50004F2DE8 /* ProtocolViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE528DDB24AF0D50004F2DE8 /* ProtocolViewController.storyboard */; };
 		BE528DDE24AF0DA0004F2DE8 /* StudyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE528DDD24AF0DA0004F2DE8 /* StudyProtocol.swift */; };
+		BE57A91624B2C5F900B81B99 /* OCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BE57A91524B2C5F900B81B99 /* OCClass.m */; };
+		BE57A91824B2C81D00B81B99 /* UseOCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57A91724B2C81D00B81B99 /* UseOCViewController.swift */; };
+		BE57A91A24B2C82900B81B99 /* UseOCViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE57A91924B2C82900B81B99 /* UseOCViewController.storyboard */; };
 		BEA50BB324AD8ADC00FD2281 /* WKWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50BB224AD8ADC00FD2281 /* WKWebViewViewController.swift */; };
 		BEA50BB524AD8AEE00FD2281 /* WKWebViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA50BB424AD8AEE00FD2281 /* WKWebViewViewController.storyboard */; };
 		BEA50BB824ADC8C600FD2281 /* SystemUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50BB724ADC8C600FD2281 /* SystemUtil.swift */; };
@@ -53,6 +56,11 @@
 		BE528DD924AF0D41004F2DE8 /* ProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolViewController.swift; sourceTree = "<group>"; };
 		BE528DDB24AF0D50004F2DE8 /* ProtocolViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProtocolViewController.storyboard; sourceTree = "<group>"; };
 		BE528DDD24AF0DA0004F2DE8 /* StudyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyProtocol.swift; sourceTree = "<group>"; };
+		BE57A91324B2C5F800B81B99 /* LXFSwiftApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LXFSwiftApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE57A91424B2C5F900B81B99 /* OCClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCClass.h; sourceTree = "<group>"; };
+		BE57A91524B2C5F900B81B99 /* OCClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCClass.m; sourceTree = "<group>"; };
+		BE57A91724B2C81D00B81B99 /* UseOCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseOCViewController.swift; sourceTree = "<group>"; };
+		BE57A91924B2C82900B81B99 /* UseOCViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UseOCViewController.storyboard; sourceTree = "<group>"; };
 		BEA50BB224AD8ADC00FD2281 /* WKWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewViewController.swift; sourceTree = "<group>"; };
 		BEA50BB424AD8AEE00FD2281 /* WKWebViewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WKWebViewViewController.storyboard; sourceTree = "<group>"; };
 		BEA50BB724ADC8C600FD2281 /* SystemUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemUtil.swift; sourceTree = "<group>"; };
@@ -102,6 +110,7 @@
 			children = (
 				BE4EB42624AC216D001748A7 /* Pages */,
 				BEA50BB624ADC83B00FD2281 /* Utils */,
+				BE57A91224B2C5BB00B81B99 /* OC */,
 				BE4EB3F024AB1B06001748A7 /* AppDelegate.swift */,
 				BE4EB3F224AB1B06001748A7 /* SceneDelegate.swift */,
 				BE4EB3F424AB1B06001748A7 /* MainViewController.swift */,
@@ -128,8 +137,20 @@
 				BEA50BB424AD8AEE00FD2281 /* WKWebViewViewController.storyboard */,
 				BE528DD924AF0D41004F2DE8 /* ProtocolViewController.swift */,
 				BE528DDB24AF0D50004F2DE8 /* ProtocolViewController.storyboard */,
+				BE57A91724B2C81D00B81B99 /* UseOCViewController.swift */,
+				BE57A91924B2C82900B81B99 /* UseOCViewController.storyboard */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		BE57A91224B2C5BB00B81B99 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				BE57A91424B2C5F900B81B99 /* OCClass.h */,
+				BE57A91524B2C5F900B81B99 /* OCClass.m */,
+				BE57A91324B2C5F800B81B99 /* LXFSwiftApp-Bridging-Header.h */,
+			);
+			path = OC;
 			sourceTree = "<group>";
 		};
 		BEA50BB624ADC83B00FD2281 /* Utils */ = {
@@ -182,6 +203,7 @@
 				TargetAttributes = {
 					BE4EB3EC24AB1B06001748A7 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -211,6 +233,7 @@
 				BE4EB3FD24AB1B0B001748A7 /* LaunchScreen.storyboard in Resources */,
 				BE4EB42E24AC2243001748A7 /* CustomTableViewController.storyboard in Resources */,
 				BE4EB43224AC80F5001748A7 /* IndexsViewController.storyboard in Resources */,
+				BE57A91A24B2C82900B81B99 /* UseOCViewController.storyboard in Resources */,
 				BE528DDC24AF0D50004F2DE8 /* ProtocolViewController.storyboard in Resources */,
 				BE4EB43624AC8183001748A7 /* SelectViewController.storyboard in Resources */,
 				BE4EB3FA24AB1B0B001748A7 /* Assets.xcassets in Resources */,
@@ -252,11 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE57A91624B2C5F900B81B99 /* OCClass.m in Sources */,
 				BEA50BB824ADC8C600FD2281 /* SystemUtil.swift in Sources */,
 				BE528DDE24AF0DA0004F2DE8 /* StudyProtocol.swift in Sources */,
 				BE4EB42B24AC21D0001748A7 /* CustomTableViewController.swift in Sources */,
 				BE4EB43024AC7972001748A7 /* IndexsViewController.swift in Sources */,
 				BEA50BB324AD8ADC00FD2281 /* WKWebViewViewController.swift in Sources */,
+				BE57A91824B2C81D00B81B99 /* UseOCViewController.swift in Sources */,
 				BE4EB43824AC8B81001748A7 /* AddViewController.swift in Sources */,
 				BE4EB3F524AB1B06001748A7 /* MainViewController.swift in Sources */,
 				BE528DDA24AF0D41004F2DE8 /* ProtocolViewController.swift in Sources */,
@@ -407,6 +432,7 @@
 			baseConfigurationReference = 660B000C737C035AEFB0D907 /* Pods-LXFSwiftApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y6RTP7B9HD;
 				INFOPLIST_FILE = LXFSwiftApp/Info.plist;
@@ -417,6 +443,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lingxuanfeng.LXFSwiftApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LXFSwiftApp/OC/LXFSwiftApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -427,6 +455,7 @@
 			baseConfigurationReference = A314908E8085689568387A27 /* Pods-LXFSwiftApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y6RTP7B9HD;
 				INFOPLIST_FILE = LXFSwiftApp/Info.plist;
@@ -437,6 +466,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lingxuanfeng.LXFSwiftApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LXFSwiftApp/OC/LXFSwiftApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -99,18 +99,18 @@ enum days: daysofaweek {
 // MARK: - 委托代理使用
 
 //播放音乐的协议
-protocol PlayMusicTools{
+protocol PlayMusicTools {
     func playMusic();
 }
 
 //实现协议的类
-class QQMusisApp:PlayMusicTools{
+class QQMusisApp:PlayMusicTools {
     func playMusic() {
         print("播放一首美妙的音乐")
     }
 }
 
-class Person{
+class Person {
     var delegate : PlayMusicTools?
     func listenMusic() {
         self.delegate?.playMusic()
