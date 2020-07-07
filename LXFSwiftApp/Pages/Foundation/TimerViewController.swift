@@ -13,7 +13,7 @@ class TimerViewController: UIViewController, UITableViewDataSource, UITableViewD
     let dataList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21,]
 
     @IBOutlet weak var tableView: UITableView!
-    var timer = Timer()
+    var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,15 +37,20 @@ class TimerViewController: UIViewController, UITableViewDataSource, UITableViewD
     // MARK: - 定时器相关
     
     func startTimer() {
+        print("startTimer")
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (_) in
             print("gogogo")
         })
         // TableView的拖动不会导致定时器暂停
-        RunLoop.current.add(timer, forMode: .common)
+        RunLoop.current.add(timer!, forMode: .common)
     }
     
     func invalidateTimer() {
-        timer.invalidate()
+        if timer != nil {
+            timer!.invalidate()
+            timer = nil
+            print("invalidateTimer")
+        }
     }
     
     // MARK: - UITableViewDataSource
