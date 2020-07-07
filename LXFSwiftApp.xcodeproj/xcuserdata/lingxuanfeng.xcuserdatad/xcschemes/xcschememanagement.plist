@@ -6,8 +6,33 @@
 	<dict>
 		<key>LXFSwiftApp.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+		<key>SwiftFramework.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BE4EB3EC24AB1B06001748A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE57A96624B32EBE00B81B99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE57A97F24B336FB00B81B99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

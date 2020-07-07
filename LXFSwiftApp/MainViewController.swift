@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
         ],
         "OC-SWIFT-Bridging" : [
             MainModel.init(name: "swift调用OC代码", controllerName: "UseOCViewController"),
+            MainModel.init(name: "swift调用swift framework", controllerName: "FrameworkViewController"),
         ],
         "UITableView" : [
             MainModel.init(name: "自定义tableview", controllerName: "CustomTableViewController"),
