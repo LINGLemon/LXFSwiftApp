@@ -15,6 +15,7 @@ class MainViewController: UIViewController {
     let dataList = [
         "Foundation" : [
             MainModel.init(name: "协议的实践", controllerName: "ProtocolViewController"),
+            MainModel.init(name: "定时器的实践", controllerName: "TimerViewController"),
         ],
         "OC-SWIFT-Bridging" : [
             MainModel.init(name: "swift调用OC代码", controllerName: "UseOCViewController"),
