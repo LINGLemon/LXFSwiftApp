@@ -10,12 +10,11 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-//    let cellID = "MainTableViewCell"
-    
     let dataList = [
         "Foundation" : [
             MainModel.init(name: "协议的实践", controllerName: "ProtocolViewController"),
             MainModel.init(name: "定时器的实践", controllerName: "TimerViewController"),
+//            MainModel.init(name: "GCD的使用总结", controllerName: "GCDViewController"),
         ],
         "OC-SWIFT-Bridging" : [
             MainModel.init(name: "swift调用OC代码", controllerName: "UseOCViewController"),
@@ -64,7 +63,7 @@ class MainViewController: UIViewController {
 
 }
 
-//MARK: - UITableView代理方法 -
+// MARK: - UITableViewDelegate
 
 extension MainViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -76,7 +75,7 @@ extension MainViewController : UITableViewDelegate {
     }
 }
 
-//MARK: - UITableView数据源和代理方法 -
+// MARK: - UITableViewDataSource
 
 extension MainViewController : UITableViewDataSource {
     
@@ -104,7 +103,7 @@ extension MainViewController : UITableViewDataSource {
     
 }
 
-//MARK: - MainTableViewCell -
+// MARK: - MainTableViewCell
 
 class MainTableViewCell: UITableViewCell {
     
@@ -112,7 +111,7 @@ class MainTableViewCell: UITableViewCell {
     
 }
 
-//MARK: - Model -
+// MARK: - Model
 
 class MainModel {
     var name : String

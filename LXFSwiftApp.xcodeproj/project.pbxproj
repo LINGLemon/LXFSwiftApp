@@ -33,6 +33,8 @@
 		BE4F47C624B41FF6008CFE6C /* WKWebViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4F47C424B41FF6008CFE6C /* WKWebViewViewController.storyboard */; };
 		BE4F47C824B4203C008CFE6C /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4F47C724B4203C008CFE6C /* TimerViewController.swift */; };
 		BE4F47CA24B4206C008CFE6C /* TimerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4F47C924B4206C008CFE6C /* TimerViewController.storyboard */; };
+		BE4F47CC24B45099008CFE6C /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4F47CB24B45099008CFE6C /* GCDViewController.swift */; };
+		BE4F47CE24B450A6008CFE6C /* GCDViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4F47CD24B450A6008CFE6C /* GCDViewController.storyboard */; };
 		BE528DDE24AF0DA0004F2DE8 /* StudyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE528DDD24AF0DA0004F2DE8 /* StudyProtocol.swift */; };
 		BE57A91624B2C5F900B81B99 /* OCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BE57A91524B2C5F900B81B99 /* OCClass.m */; };
 		BE57A98424B336FB00B81B99 /* SwiftFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BE57A98224B336FB00B81B99 /* SwiftFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -97,6 +99,8 @@
 		BE4F47C424B41FF6008CFE6C /* WKWebViewViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WKWebViewViewController.storyboard; sourceTree = "<group>"; };
 		BE4F47C724B4203C008CFE6C /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		BE4F47C924B4206C008CFE6C /* TimerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimerViewController.storyboard; sourceTree = "<group>"; };
+		BE4F47CB24B45099008CFE6C /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
+		BE4F47CD24B450A6008CFE6C /* GCDViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GCDViewController.storyboard; sourceTree = "<group>"; };
 		BE528DDD24AF0DA0004F2DE8 /* StudyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyProtocol.swift; sourceTree = "<group>"; };
 		BE57A91324B2C5F800B81B99 /* LXFSwiftApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LXFSwiftApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		BE57A91424B2C5F900B81B99 /* OCClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCClass.h; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 				BE4F47A424B41FC4008CFE6C /* ProtocolViewController.storyboard */,
 				BE4F47C724B4203C008CFE6C /* TimerViewController.swift */,
 				BE4F47C924B4206C008CFE6C /* TimerViewController.storyboard */,
+				BE4F47CB24B45099008CFE6C /* GCDViewController.swift */,
+				BE4F47CD24B450A6008CFE6C /* GCDViewController.storyboard */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 				BE4F47C624B41FF6008CFE6C /* WKWebViewViewController.storyboard in Resources */,
 				BE4F47A624B41FC4008CFE6C /* ProtocolViewController.storyboard in Resources */,
 				BE4F47C124B41FEB008CFE6C /* CustomTableViewController.storyboard in Resources */,
+				BE4F47CE24B450A6008CFE6C /* GCDViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +442,7 @@
 				BE4EB3F124AB1B06001748A7 /* AppDelegate.swift in Sources */,
 				BE4EB3F324AB1B06001748A7 /* SceneDelegate.swift in Sources */,
 				BE4F47BC24B41FEB008CFE6C /* IndexsViewController.swift in Sources */,
+				BE4F47CC24B45099008CFE6C /* GCDViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

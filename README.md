@@ -8,3 +8,4 @@
 5. 新增swift项目对oc的使用方法，博客中有记录oc项目对swift的使用方法。博客链接：https://blog.csdn.net/sinat_31177681/article/details/107158420
 6. 新增创建Swift framework的教程，并有swift和oc调用framework的使用方法。博客链接：https://blog.csdn.net/sinat_31177681/article/details/107160024
 7. 新增Timer的使用。
+8. 新增GCD的使用总结。
