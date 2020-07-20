@@ -8,16 +8,28 @@
 
 import UIKit
 import SwiftFramework
+import StaticFrameworkSDK
 
 class FrameworkViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("使用framework")
         let testTool = TestTool()
-        testTool.openSayHelloWorld();
-        testTool.publicSayHelloWorld();
-        testTool.sayHelloWorldToOC();
+        testTool.openSayHelloWorld()
+        testTool.publicSayHelloWorld()
+        testTool.sayHelloWorldToOC()
+        
+        print("通过oc使用framework")
+        let ocUseFramework = OCUseFramework()
+        ocUseFramework.useSwiftFrameworkMethod()
+        
+        print("使用static framework")
+        let staticTestTool = StaticFrameworkTestTool()
+        staticTestTool.openSayHelloWorld()
+        staticTestTool.publicSayHelloWorld()
+        staticTestTool.sayHelloWorldToOC()
         
     }
     

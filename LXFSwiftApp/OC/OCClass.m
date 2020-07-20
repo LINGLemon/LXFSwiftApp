@@ -8,8 +8,6 @@
 
 #import "OCClass.h"
 
-#import <SwiftFramework/SwiftFramework.h>
-
 @interface OCClass()
 
 @end
@@ -18,11 +16,6 @@
 
 void testc() {
     printf("testc.....................\n");
-}
-
-- (void)useSwiftFrameworkMethod {
-    TestTool *testTool = [TestTool new];
-    [testTool sayHelloWorldToOC];
 }
 
 - (void)testOC {

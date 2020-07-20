@@ -31,8 +31,6 @@ void testc(void);
 - (void)testOC;
 
 
-- (void)useSwiftFrameworkMethod;
-
 - (void)testOCWithParm:(NSString *)parm;
 
 - (void)testOCWithParm1:(NSString *)parm1 withParm2:(NSString *)parm2;

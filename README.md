@@ -9,3 +9,4 @@
 6. 新增创建Swift framework的教程，并有swift和oc调用framework的使用方法。博客链接：https://blog.csdn.net/sinat_31177681/article/details/107160024
 7. 新增Timer的使用。
 8. 新增GCD的使用总结。
+9. 新增创建Swift 静态 framework的教程，并有swift和oc调用静态framework的使用方法。（Swift不支持.a的静态库,因此只能制作.framework的静态库）博客链接：https://blog.csdn.net/sinat_31177681/article/details/107460600
