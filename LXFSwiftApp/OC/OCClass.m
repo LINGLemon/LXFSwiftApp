@@ -14,6 +14,10 @@
 
 @implementation OCClass
 
++ (void)testStaticOC {
+    printf("testStaticOC.....................\n");
+}
+
 void testc() {
     printf("testc.....................\n");
 }

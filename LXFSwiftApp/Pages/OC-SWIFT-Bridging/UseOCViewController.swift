@@ -18,10 +18,9 @@ class UseOCViewController: UIViewController, OCClassProtocol {
         testc()
         
         // MARK: - 调用OC方法
-
         let oc = OCClass()
         oc.testOC()
-        oc.testOC(withParm: "ahh")
+        oc.testOC(withParm: String())
         oc.testOC(withParm1: "ahh1", withParm2: "ahh2")
         
         // MARK: - 遵守OC的代理

@@ -22,11 +22,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+typedef NS_ENUM(UInt8, LXF_TestType) {
+    LXF_TestTypeDo               = 0,    //开始传输文件数据
+    LXF_TestTypeDone             = 1,    //结束传输文件数据
+    LXF_TestTypeDoing            = 2,    //正在传输文件数据
+    LXF_TestTypeCancel           = 3,    //取消传输文件数据
+    LXF_TestTypeError            = 4,    //传输文件数据出错
+    LXF_TestTypeUnknown,
+};
+
 @interface OCClass : NSObject
 
 @property (nonatomic, weak) id<OCClassProtocol> delegate;
 
 void testc(void);
+
++ (void)testStaticOC;
 
 - (void)testOC;
 
