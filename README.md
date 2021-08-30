@@ -11,5 +11,5 @@
 8. 新增GCD的使用总结。
 9. 新增创建Swift 静态 framework的教程，并有Swift和OC调用静态framework的使用方法。（Swift不支持.a的静态库,因此只能制作.framework的静态库）博客链接：https://blog.csdn.net/sinat_31177681/article/details/107460600
 10. 新增文件转Data。博客链接：https://blog.csdn.net/sinat_31177681/article/details/119991199
-11. 新增创建Swift调用c代码。博客链接：https://blog.csdn.net/sinat_31177681/article/details/119992371
-12. 新增创建Swift调用cpp代码。博客链接：https://blog.csdn.net/sinat_31177681/article/details/119993392
+11. 新增Swift调用c代码。博客链接：https://blog.csdn.net/sinat_31177681/article/details/119992371
+12. 新增Swift调用cpp代码。博客链接：https://blog.csdn.net/sinat_31177681/article/details/119993392
