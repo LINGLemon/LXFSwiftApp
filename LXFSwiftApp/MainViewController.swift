@@ -15,13 +15,16 @@ class MainViewController: UIViewController {
             MainModel.init(name: "协议的实践", controllerName: "ProtocolViewController"),
             MainModel.init(name: "定时器的实践", controllerName: "TimerViewController"),
 //            MainModel.init(name: "GCD的使用总结", controllerName: "GCDViewController"),
+            MainModel.init(name: "文件转Data", controllerName: "FileDataViewController"),
         ],
         "OC-SWIFT-Bridging" : [
-            MainModel.init(name: "swift调用OC代码", controllerName: "UseOCViewController"),
-            MainModel.init(name: "swift调用swift framework", controllerName: "FrameworkViewController"),
+            MainModel.init(name: "Swift调用OC代码", controllerName: "UseOCViewController"),
+            MainModel.init(name: "Swift调用swift framework", controllerName: "FrameworkViewController"),
+            MainModel.init(name: "Swift调用c代码", controllerName: "UseCViewController"),
+            MainModel.init(name: "Swift调用cpp代码", controllerName: "UseCppViewController"),
         ],
         "UITableView" : [
-            MainModel.init(name: "自定义tableview", controllerName: "CustomTableViewController"),
+            MainModel.init(name: "代码自定义tableview的cell", controllerName: "CustomTableViewController"),
             MainModel.init(name: "索引和章节tableview", controllerName: "IndexsViewController"),
             MainModel.init(name: "UITableViewCell的accessoryType", controllerName: "SelectViewController"),
             MainModel.init(name: "UITableView Cell的操作", controllerName: "AddViewController"),
@@ -36,6 +39,9 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tips = "Hello, this is Swift Learning!"
+        NSLog("NSLog : \(tips)")
         
         keys = dataList.keys.sorted()
         

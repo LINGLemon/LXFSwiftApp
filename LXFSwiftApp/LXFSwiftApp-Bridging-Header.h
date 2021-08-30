@@ -4,4 +4,5 @@
 
 #import "OCClass.h"
 #import "OCUseFramework.h"
-
+#include "testC.h"
+#import "PersonExtern.h"
