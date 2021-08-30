@@ -5,7 +5,7 @@
 2. 新增wkwebview demo。博客链接：https://blog.csdn.net/sinat_31177681/article/details/107099845
 3. SystemUtil文件中新增单例的demo。博客链接：https://blog.csdn.net/sinat_31177681/article/details/107101189
 4. 新增Swift 协议相关学习。博客链接：https://blog.csdn.net/sinat_31177681/article/details/107110377
-5. 新增Swift项目对OC的使用方法，博客中有记录OC项目对Swift的使用方法。博客链接：https://blog.csdn.net/sinat_31177681/article/details/107158420
+5. 新增Swift项目对OC的使用方法。博客链接：https://blog.csdn.net/sinat_31177681/article/details/107158420
 6. 新增创建Swift framework的教程，并有Swift和OC调用framework的使用方法。博客链接：https://blog.csdn.net/sinat_31177681/article/details/107160024
 7. 新增Timer的使用。
 8. 新增GCD的使用总结。
