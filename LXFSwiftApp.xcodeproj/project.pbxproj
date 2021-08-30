@@ -53,6 +53,10 @@
 		BE73B83626DC7D450003C737 /* UseCppViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE73B83526DC7D450003C737 /* UseCppViewController.storyboard */; };
 		BE73B83926DC7DBB0003C737 /* testC.c in Sources */ = {isa = PBXBuildFile; fileRef = BE73B83826DC7DBB0003C737 /* testC.c */; };
 		BE73B83C26DC7FA70003C737 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE73B83A26DC7FA70003C737 /* Person.cpp */; };
+		BE73B84426DCA9480003C737 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE73B84226DCA9480003C737 /* CustomTableViewCell.swift */; };
+		BE73B84526DCA9480003C737 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE73B84326DCA9480003C737 /* CustomTableViewCell.xib */; };
+		BE73B84726DCAF220003C737 /* CustomXibTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE73B84626DCAF220003C737 /* CustomXibTableViewController.swift */; };
+		BE73B84926DCAF2D0003C737 /* CustomXibTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE73B84826DCAF2D0003C737 /* CustomXibTableViewController.storyboard */; };
 		BEA50BB824ADC8C600FD2281 /* SystemUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50BB724ADC8C600FD2281 /* SystemUtil.swift */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +143,10 @@
 		BE73B83A26DC7FA70003C737 /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
 		BE73B83B26DC7FA70003C737 /* Person.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Person.hpp; sourceTree = "<group>"; };
 		BE73B83D26DC800E0003C737 /* PersonExtern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonExtern.h; sourceTree = "<group>"; };
+		BE73B84226DCA9480003C737 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		BE73B84326DCA9480003C737 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		BE73B84626DCAF220003C737 /* CustomXibTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomXibTableViewController.swift; sourceTree = "<group>"; };
+		BE73B84826DCAF2D0003C737 /* CustomXibTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomXibTableViewController.storyboard; sourceTree = "<group>"; };
 		BEA50BB724ADC8C600FD2281 /* SystemUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,6 +284,10 @@
 				BE4F47B724B41FEB008CFE6C /* IndexsViewController.storyboard */,
 				BE4F47B824B41FEB008CFE6C /* CustomTableViewController.swift */,
 				BE4F47B924B41FEB008CFE6C /* CustomTableViewController.storyboard */,
+				BE73B84626DCAF220003C737 /* CustomXibTableViewController.swift */,
+				BE73B84826DCAF2D0003C737 /* CustomXibTableViewController.storyboard */,
+				BE73B84226DCA9480003C737 /* CustomTableViewCell.swift */,
+				BE73B84326DCA9480003C737 /* CustomTableViewCell.xib */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -496,8 +508,10 @@
 				BE4F47BD24B41FEB008CFE6C /* SelectViewController.storyboard in Resources */,
 				BE73B83226DC7CC80003C737 /* UseCViewController.storyboard in Resources */,
 				BE4F47C624B41FF6008CFE6C /* WKWebViewViewController.storyboard in Resources */,
+				BE73B84926DCAF2D0003C737 /* CustomXibTableViewController.storyboard in Resources */,
 				BE4F47A624B41FC4008CFE6C /* ProtocolViewController.storyboard in Resources */,
 				BE4F47C124B41FEB008CFE6C /* CustomTableViewController.storyboard in Resources */,
+				BE73B84526DCA9480003C737 /* CustomTableViewCell.xib in Resources */,
 				BE4F47CE24B450A6008CFE6C /* GCDViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,11 +564,13 @@
 			files = (
 				BE4F47BA24B41FEB008CFE6C /* SelectViewController.swift in Sources */,
 				BE4F47A724B41FC4008CFE6C /* ProtocolViewController.swift in Sources */,
+				BE73B84726DCAF220003C737 /* CustomXibTableViewController.swift in Sources */,
 				BE73B83026DC7CBD0003C737 /* UseCViewController.swift in Sources */,
 				BE4F47B024B41FDC008CFE6C /* UseOCViewController.swift in Sources */,
 				BE73B83C26DC7FA70003C737 /* Person.cpp in Sources */,
 				BE4F47BB24B41FEB008CFE6C /* AddViewController.swift in Sources */,
 				BE57A91624B2C5F900B81B99 /* OCClass.m in Sources */,
+				BE73B84426DCA9480003C737 /* CustomTableViewCell.swift in Sources */,
 				BE4F47C024B41FEB008CFE6C /* CustomTableViewController.swift in Sources */,
 				BE55C7B924C53FF5007CB9C7 /* OCUseFramework.m in Sources */,
 				BEA50BB824ADC8C600FD2281 /* SystemUtil.swift in Sources */,

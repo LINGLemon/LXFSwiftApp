@@ -8,7 +8,14 @@
 
 import UIKit
 
+enum EnumType : Int {
+    case test0 = 0
+    case test1 = 1
+};
+
 class MainViewController: UIViewController {
+    
+    var type = EnumType.test0   // Swift的枚举的使用示例
     
     let dataList = [
         "Foundation" : [
@@ -25,6 +32,7 @@ class MainViewController: UIViewController {
         ],
         "UITableView" : [
             MainModel.init(name: "代码自定义tableview的cell", controllerName: "CustomTableViewController"),
+            MainModel.init(name: "xib自定义tableview的cell", controllerName: "CustomXibTableViewController"),
             MainModel.init(name: "索引和章节tableview", controllerName: "IndexsViewController"),
             MainModel.init(name: "UITableViewCell的accessoryType", controllerName: "SelectViewController"),
             MainModel.init(name: "UITableView Cell的操作", controllerName: "AddViewController"),

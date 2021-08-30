@@ -19,7 +19,6 @@ class CustomTableViewController: UIViewController, UITableViewDataSource, UITabl
         ["name":"JIM", "sex":"男", "icon":"my_def_photo", "birthday":"2008-10-1"],
     ]
     
-        
     override func viewDidLoad() {
         super.viewDidLoad()
         

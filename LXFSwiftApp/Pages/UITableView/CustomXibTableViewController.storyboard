@@ -9,35 +9,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Custom Table View Controller-->
-        <scene sceneID="wQF-Kv-EBI">
+        <!--Custom Xib Table View Controller-->
+        <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="CustomTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JvP-cB-VGS" customClass="CustomTableViewController" customModule="LXFSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hc1-XH-pQe">
+                <viewController storyboardIdentifier="CustomXibTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CustomXibTableViewController" customModule="LXFSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3La-DA-KAi">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Erz-hW-x1D">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="piw-YJ-ZRj"/>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3La-DA-KAi" firstAttribute="leading" secondItem="piw-YJ-ZRj" secondAttribute="leading" id="8GF-fO-bDD"/>
-                            <constraint firstItem="3La-DA-KAi" firstAttribute="top" secondItem="piw-YJ-ZRj" secondAttribute="top" id="9F5-qE-GMK"/>
-                            <constraint firstItem="piw-YJ-ZRj" firstAttribute="bottom" secondItem="3La-DA-KAi" secondAttribute="bottom" id="VJA-hF-cZC"/>
-                            <constraint firstItem="piw-YJ-ZRj" firstAttribute="trailing" secondItem="3La-DA-KAi" secondAttribute="trailing" id="k74-UL-j8W"/>
+                            <constraint firstItem="Erz-hW-x1D" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1eW-YC-pnR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Erz-hW-x1D" secondAttribute="bottom" id="PJX-Ro-qvs"/>
+                            <constraint firstItem="Erz-hW-x1D" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="VA0-VW-YSt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Erz-hW-x1D" secondAttribute="trailing" id="wv2-MF-udP"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="3La-DA-KAi" id="zan-rO-7Dk"/>
+                        <outlet property="tableView" destination="Erz-hW-x1D" id="EkC-gt-iMw"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WxD-EY-FSH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9" y="102"/>
+            <point key="canvasLocation" x="128" y="56"/>
         </scene>
     </scenes>
     <resources>
