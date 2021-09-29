@@ -57,6 +57,9 @@ class MainViewController: UIViewController {
         tableView.delegate = self;
         
         tableView.tableFooterView = UIView()
+        if #available(iOS 15.0, *) {
+            tableView.sectionHeaderTopPadding = 0
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
